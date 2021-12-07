@@ -28,12 +28,12 @@ class App extends Component {
             <p>Click on the link below to add add StarryBot to your Discord server.</p>
           </div>
           <div className="download-btn">
-            <input type="submit" value="Add StarryBot" onClick={e =>  window.location.href='https://discord.com/oauth2/authorize?client_id=911363833925349456&scope=bot&permissions=8'} />
+            <input type="submit" value="Add StarryBot" onClick={e =>  window.location.href='https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=bot&permissions=8'} />
           </div>
         </header>
         <div className="below-the-fold">
           <div className="messages">
-            <p>You can add rules checking if the user has certain cw20 and/or cw721 tokens.</p>
+            <p>You can add rules checking if the user has certain tokens in the Cosmos ecosystem.</p>
             <p>By default, any user with Juno tokens will be given the role: <code>juno-hodler</code></p>
           </div>
         </div>
