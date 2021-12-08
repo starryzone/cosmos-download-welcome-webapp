@@ -22,19 +22,19 @@ class App extends Component {
     return (
 
 
-<div className="App">
+<div className="App" onClick={ e => { let s = document.getElementById('clamber'); if(s.on) { s.on=0; s.pause() } else { s.on=1; s.play() } } }>
 
+<audio id="clamber" src="/art/starry.mp4" preload="auto"></audio>
 
 <div class="top-bar">
  <div class="top-bar-left" style={{position:"absolute",top:8,left:20}}>🌟🤖</div>
  <div class="top-bar-name text-center">Starrybot</div>
 </div>
 
-
 <div class="body-wrap">
 
 <div class="starry-intro row medium-10 small-12 large-10 column text-center">
- <i class="fas fa-meteor">☄️</i>
+ <i class="fas fa-meteor"  >☄️</i>
  <h2 class="starry-welcome"> StarryBot welcomes you! </h2>
  <p>Click on the link below to add add StarryBot to your Discord server.</p>
  <a href="validation-page.html">
