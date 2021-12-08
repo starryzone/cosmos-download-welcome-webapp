@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import preval from 'preval.macro'
 
 class App extends Component {
   componentDidMount() {
@@ -73,7 +74,7 @@ class App extends Component {
 <br/>
 <a href="https://www.youtube.com/watch?v=sJ_tZr0D2pk">🌟</a>
 <br/>
-<p style={{color:"white"}}>Cold fusion that is!</p>
+<p style={{color:"white"}}>Build Date: {preval`module.exports = new Date().toLocaleString();`}</p>
 </div>
 
 
