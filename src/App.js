@@ -22,7 +22,7 @@ class App extends Component {
     return (
 
 
-<div className="App" onClick={ e => { let s = document.getElementById('clamber'); if(s.on) { s.on=0; s.pause() } else { s.on=1; s.play() } } }>
+<div className="App" >
 
 <audio id="clamber" src="/art/starry.mp4" preload="auto"></audio>
 
