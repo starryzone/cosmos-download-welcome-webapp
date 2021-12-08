@@ -71,7 +71,7 @@ class App extends Component {
 <p>Join us on <a href="https://discord.gg/BqjEhWzJKU">Discord</a></p>
 <br/>
 <br/>
-🌟
+<a href="https://www.youtube.com/watch?v=sJ_tZr0D2pk">🌟</a>
 <br/>
 <p style={{color:"white"}}>Cold fusion that is!</p>
 </div>
