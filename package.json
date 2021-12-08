@@ -2,6 +2,7 @@
   "name": "starry-welcome-webapp",
   "version": "0.1.0",
   "private": false,
+  "license": "mit",
   "dependencies": {
     "@cosmjs/amino": "^0.26.4",
     "@cosmjs/crypto": "^0.26.4",
