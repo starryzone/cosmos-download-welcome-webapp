@@ -47,7 +47,7 @@ class App extends Component {
  <div class="row">
   <div class="large-7 medium-12 small-12 columns text-left">
    <h3>Create token-gated roles and channels.</h3>
-   <p>Add rules checking if the user has certain tokens.</p>
+   <p>Add rules checking if the user has certain tokens in the cosmos ecosystem.</p>
    <p>By default, any user with Juno tokens will be given the role: <code>juno-hodler</code></p>
   </div>
   <div class="large-5 medium-12 small-12 columns">
@@ -67,9 +67,11 @@ class App extends Component {
 
 </div>
 
-<p>A fusion of web2 and web3 by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
+<p>A fusion of web2 and web3 for the cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
+<p>Join us on <a href="https://discord.gg/BqjEhWzJKU">Discord</a></p>
 <br/>
 <br/>
+🌟
 <br/>
 <p style={{color:"white"}}>Cold fusion that is!</p>
 </div>
