@@ -20,24 +20,62 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">StarryBot welcomes you!</h1>
-          <p className="App-subtitle">Explore the frontier of Discord gating with Cosmos…</p>
-          <div className="messages">
-            <p>Click on the link below to add add StarryBot to your Discord server.</p>
-          </div>
-          <div className="download-btn">
-            <input type="submit" value="Add StarryBot" onClick={e =>  window.location.href='https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=bot&permissions=8'} />
-          </div>
-        </header>
-        <div className="below-the-fold">
-          <div className="messages">
-            <p>You can add rules checking if the user has certain tokens in the Cosmos ecosystem.</p>
-            <p>By default, any user with Juno tokens will be given the role: <code>juno-hodler</code></p>
-          </div>
-        </div>
-      </div>
+
+
+<div className="App">
+
+
+<div class="top-bar">
+ <div class="top-bar-left" style={{position:"absolute",top:8,left:20}}>🌟🤖</div>
+ <div class="top-bar-name text-center">Starrybot</div>
+</div>
+
+
+<div class="body-wrap">
+
+<div class="starry-intro row medium-10 small-12 large-10 column text-center">
+ <i class="fas fa-meteor">☄️</i>
+ <h2 class="starry-welcome"> StarryBot welcomes you! </h2>
+ <p>Click on the link below to add add StarryBot to your Discord server.</p>
+ <a href="validation-page.html">
+  <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=bot&permissions=8" class="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img> </a>  
+ </a>
+</div>
+
+
+<div class="starry-deets row medium-10 small-12 large-10 column text-center">
+ <div class="row">
+  <div class="large-7 medium-12 small-12 columns text-left">
+   <h3>Create token-gated roles and channels.</h3>
+   <p>Add rules checking if the user has certain tokens.</p>
+   <p>By default, any user with Juno tokens will be given the role: <code>juno-hodler</code></p>
+  </div>
+  <div class="large-5 medium-12 small-12 columns">
+   <img src="/art/discord.png" alt="discord window screenshot"></img>
+  </div>
+ </div>
+</div>
+
+<div class="starry-bonus row medium-10 small-12 large-10 column text-center">
+ <h3>Starrybot authenticates with Keplr wallet</h3>
+ <p>Promote membership for your Discord Community</p>
+ <a href="validation-page.html">
+  <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=bot&permissions=8" class="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img> </a>  
+ </a>
+</div>
+  
+
+</div>
+
+<p>A fusion of web2 and web3 by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
+<br/>
+<br/>
+<br/>
+<p style={{color:"white"}}>Cold fusion that is!</p>
+</div>
+
+
+
     );
   }
 }

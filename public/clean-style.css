@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Questrial&display=swap');
+
+
+/* ??? foundation sets this??? */
+body, html {
+  background-color:  white;
+}
+
+.body-wrap {
+  background-color:  white;
+  padding: 2%;
+}
+
+.body-wrap p {
+  font-size: 1.5em;
+  font-weight: 555;
+  line-height: 1.2em;
+  margin-bottom: 25px;
+}
+
+* {
+  transition: all .2s ease-in-out;  
+}
+
+
+
+
+
+.top-bar {
+  background-color: #7585FF;
+  margin-bottom: 0px;
+}
+
+.top-bar-left {
+  font-size: 4em;
+}
+
+.side-logos {
+  color: white;
+  font-size: 4em;
+}
+
+.top-bar-name {
+  font-weight: bolder;
+  color: white;
+  font-size:  4em;
+  font-weight:  bold;
+  font-family: 'Montserrat', bold, sans-serif;  
+  color: white;
+}
+
+.top-bar-name:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.add-bot-button {
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid #FC8AD0;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+  font-weight: 777;
+}
+
+.add-bot-button img {
+  height: 40px;
+  width: auto;
+}
+
+.add-bot-button:hover {
+  transform: scale(1.1);
+}
+
+.starry-welcome {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.starry-intro {
+  padding: 50px;
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: linear-gradient(#5f6dc7, #8697f6);
+  color: white;
+}
+
+.fa-meteor {
+  font-size: 3em;
+  transition: all .2s ease-in-out;  
+}
+
+.fa-meteor:hover {
+  transform: scale(1.1);
+}
+
+.starry-deets {
+  padding: 50px;
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: linear-gradient(#be75a4, #fa9fdb);
+  color: white;
+}
+
+.starry-bonus {
+  padding: 50px;
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: linear-gradient(#be75a4, #fa9fdb);
+  color: white;
+}
+
