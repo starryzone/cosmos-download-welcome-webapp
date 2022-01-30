@@ -39,7 +39,7 @@ class App extends Component {
  <h2 class="starry-welcome"> StarryBot welcomes you! </h2>
  <p>Click on the link below to add add StarryBot to your Discord server.</p>
  <a href="validation-page.html">
-  <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=bot&permissions=8" class="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img> </a>  
+  <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8" class="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img> </a>
  </a>
 </div>
 
@@ -61,7 +61,7 @@ class App extends Component {
  <h3>Starrybot authenticates with Keplr wallet</h3>
  <p>Promote membership for your Discord Community</p>
  <a href="validation-page.html">
-  <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=bot&permissions=8" class="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img> </a>  
+  <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8" class="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img> </a>
  </a>
 </div>
   
