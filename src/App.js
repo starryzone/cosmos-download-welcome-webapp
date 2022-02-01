@@ -29,15 +29,15 @@ class App extends Component {
 
 <div class="top-bar">
  <div class="top-bar-left" style={{position:"absolute",top:8,left:20}}>🌟🤖</div>
- <div class="top-bar-name text-center">Starrybot</div>
+ <div class="top-bar-name text-center">starrybot</div>
 </div>
 
 <div class="body-wrap">
 
 <div class="starry-intro row medium-10 small-12 large-10 column text-center">
  <i class="fas fa-meteor"  >☄️</i>
- <h2 class="starry-welcome"> StarryBot welcomes you! </h2>
- <p>Click on the link below to add add StarryBot to your Discord server.</p>
+ <h2 class="starry-welcome"> starrybot welcomes you! </h2>
+ <p>Click on the link below to add add starrybot to your Discord server.</p>
  <a href="validation-page.html">
   <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8" class="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img> </a>
  </a>
@@ -58,13 +58,13 @@ class App extends Component {
 </div>
 
 <div class="starry-bonus row medium-10 small-12 large-10 column text-center">
- <h3>Starrybot authenticates with Keplr wallet</h3>
+ <h3>starrybot authenticates with Keplr wallet</h3>
  <p>Promote membership for your Discord Community</p>
  <a href="validation-page.html">
   <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8" class="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img> </a>
  </a>
 </div>
-  
+
 
 </div>
 

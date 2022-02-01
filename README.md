@@ -1,4 +1,4 @@
-# StarryBot welcome page
+# starrybot welcome page
 
 ## Overview
 
