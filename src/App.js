@@ -48,8 +48,7 @@ class App extends Component {
  <div class="row">
   <div class="large-7 medium-12 small-12 columns text-left">
    <h3>Create token-gated roles and channels.</h3>
-   <p>Add rules checking if the user has certain tokens in the cosmos ecosystem.</p>
-   <p>By default, any user with Juno tokens will be given the role: <code>juno-hodler</code></p>
+   <p>Add rules checking if the user has certain tokens in the Cosmos ecosystem.</p>
   </div>
   <div class="large-5 medium-12 small-12 columns">
    <img src="/art/discord.png" alt="discord window screenshot"></img>
