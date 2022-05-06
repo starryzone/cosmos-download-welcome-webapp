@@ -64,10 +64,10 @@ function Home() {
     <>
       <div className="starry-intro row medium-10 small-12 large-10 column text-center">
         <i className="fas fa-meteor">☄️</i>
-        <h2 className="starry-welcome"> starrybot welcomes you! </h2>
-        <p>Click on the link below to add starrybot to your Discord server.</p>
+        <h2 className="starry-welcome"> A Discord bot for Stargaze </h2>
+        <br />
         <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
-          className="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img></a>
+          className="add-bot-button button round-button"> Add Bot <img src="/art/star.png"></img></a>
       </div>
 
       <div className="starry-deets row medium-10 small-12 large-10 column text-center">

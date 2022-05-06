@@ -93,10 +93,11 @@ body, html {
   border-radius: 50px;
   background-color: white;
   border: 2px solid #FC8AD0;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0;
+  padding: 5px 20px 5px 30px;
   color: black;
-  font-weight: 777;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .add-bot-button img {
