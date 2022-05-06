@@ -62,7 +62,7 @@ class App extends Component {
 function Home() {
   return (
     <>
-      <div className="starry-intro row medium-10 small-12 large-10 column text-center">
+      <div className="starry-intro starry-container row medium-10 small-12 large-10 column text-center">
         <i className="fas fa-meteor">☄️</i>
         <h2 className="starry-welcome"> A Discord bot for Stargaze </h2>
         <br />
@@ -70,12 +70,12 @@ function Home() {
           className="add-bot-button button round-button"> Add Bot <img src="/art/star.png"></img></a>
       </div>
 
-      <div className="starry-deets row medium-10 small-12 large-10 column text-left">
+      <div className="starry-deets starry-container row medium-10 small-12 large-10 column text-left">
         <p>Create token-gated roles and channels with CW721 and CW20 Tokens</p>
         <img className="starry-deets-img" src="/art/discord.png" alt="discord window screenshot"></img>
       </div>
 
-      <div className="starry-bonus row medium-10 small-12 large-10 column text-center">
+      <div className="starry-bonus starry-container row medium-10 small-12 large-10 column text-center">
         <p style={{ maxWidth: 400, margin: "0 auto"}}>Starrybot authenticates with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
         <br />
         <div>
@@ -85,6 +85,9 @@ function Home() {
             Docs <img alt="open-book-emoji" src="/art/open-book.png" />
           </a>
         </div>
+      </div>
+      <div className="starry-communities starry-container row medium-10 small-12 large-10 column text-center">
+        <h3>Communities using Starrybot:</h3>
       </div>
       <nav>
         <Link to="/terms">Terms of Service</Link><br/>

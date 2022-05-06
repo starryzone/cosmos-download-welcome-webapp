@@ -23,10 +23,6 @@ body, html {
   transition: all .2s ease-in-out;  
 }
 
-
-
-
-
 .top-bar {
   background-color: #4B56AC;
   display: flex;
@@ -86,9 +82,6 @@ body, html {
   transform: scale(1.1);
 }
 
-
-
-
 .add-bot-button {
   border-radius: 50px;
   background-color: white;
@@ -115,13 +108,16 @@ body, html {
   margin-bottom: 10px;
 }
 
-.starry-intro {
-  padding: 50px;
+.starry-container {
   border-radius: 15px;
+  color: white;
+  padding: 50px;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.starry-intro {
   background: linear-gradient(#5f6dc7, #8697f6);
-  color: white;
 }
 
 .fa-meteor {
@@ -136,13 +132,8 @@ body, html {
 .starry-deets {
   align-items: center;
   background: linear-gradient(#CA70a9, #EB87CC);
-  border-radius: 15px;
-  color: white;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  padding: 50px;
 }
 
 .starry-deets img {
@@ -161,11 +152,9 @@ body, html {
 }
 
 .starry-bonus {
-  padding: 50px;
-  border-radius: 15px;
-  margin-top: 5%;
-  margin-bottom: 5%;
   background: #8A9CFC;
-  color: white;
 }
 
+.starry-communities {
+  background: linear-gradient(#5f6dc7, #8697f6);
+}
