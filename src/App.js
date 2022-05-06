@@ -70,16 +70,9 @@ function Home() {
           className="add-bot-button button round-button"> Add Bot <img src="/art/star.png"></img></a>
       </div>
 
-      <div className="starry-deets row medium-10 small-12 large-10 column text-center">
-        <div className="row">
-          <div className="large-7 medium-12 small-12 columns text-left">
-            <h3>Create token-gated roles and channels.</h3>
-            <p>Add rules checking if the user has certain tokens in the Cosmos ecosystem.</p>
-          </div>
-          <div className="large-5 medium-12 small-12 columns">
-            <img src="/art/discord.png" alt="discord window screenshot"></img>
-          </div>
-        </div>
+      <div className="starry-deets row medium-10 small-12 large-10 column text-left">
+        <p>Create token-gated roles and channels with CW721 and CW20 Tokens</p>
+        <img className="starry-deets-img" src="/art/discord.png" alt="discord window screenshot"></img>
       </div>
 
       <div className="starry-bonus row medium-10 small-12 large-10 column text-center">

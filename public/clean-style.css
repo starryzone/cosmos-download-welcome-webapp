@@ -134,12 +134,30 @@ body, html {
 }
 
 .starry-deets {
-  padding: 50px;
+  align-items: center;
+  background: linear-gradient(#CA70a9, #EB87CC);
   border-radius: 15px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  background: linear-gradient(#be75a4, #fa9fdb);
   color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 50px;
+}
+
+.starry-deets img {
+  max-height: 200px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .starry-deets {
+    flex-direction: column;
+  }
+
+  .starry-deets img {
+    padding-left: 0;
+  }
 }
 
 .starry-bonus {
