@@ -76,10 +76,15 @@ function Home() {
       </div>
 
       <div className="starry-bonus row medium-10 small-12 large-10 column text-center">
-        <h3>starrybot authenticates with Keplr wallet</h3>
-        <p>Promote membership for your Discord Community</p>
-        <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
-          className="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img></a>
+        <p style={{ maxWidth: 400, margin: "0 auto"}}>Starrybot authenticates with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
+        <br />
+        <div>
+          <a style={{ marginRight: 20 }} href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
+            className="add-bot-button button round-button"> Add Bot <img alt="star-emoji" src="/art/star.png" /></a>
+          <a href="https://docs.starrybot.xyz" className="add-bot-button button round-button">
+            Docs <img alt="open-book-emoji" src="/art/open-book.png" />
+          </a>
+        </div>
       </div>
       <nav>
         <Link to="/terms">Terms of Service</Link><br/>
