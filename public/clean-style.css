@@ -28,12 +28,44 @@ body, html {
 
 
 .top-bar {
-  background-color: #7585FF;
+  background-color: #4B56AC;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0px;
 }
 
-.top-bar-left {
-  font-size: 4em;
+.top-bar-icon-links {
+  display: flex;
+}
+
+@media screen and (min-width:600px) {  
+  .top-bar-icons {
+    font-size: 4em;
+  }
+
+  .top-bar-docs-link {
+    padding-right: 25px;
+  }
+
+  .top-bar-discord-link img {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-bar-icons {
+    align-self: center;
+    font-size: 2em;
+  }
+  
+  .top-bar-docs-link {
+    padding-right: 10px;
+  }
+
+  .top-bar-discord-link img {
+    height: 1em;
+    padding-bottom: 5px;
+  }
 }
 
 .side-logos {

@@ -26,8 +26,14 @@ class App extends Component {
         <audio id="clamber" src="/art/starry.mp4" preload="auto"></audio>
 
         <div className="top-bar">
-          <div className="top-bar-left" style={{position: "absolute", top: 8, left: 20}}>🌟🤖</div>
-          <div className="top-bar-name text-center">starrybot</div>
+          <div className="top-bar-icons">🌟 🤖</div>
+          <div className="top-bar-name text-center">Starrybot</div>
+          <div className="top-bar-icons top-bar-icon-links">
+            <a className='top-bar-docs-link' href="https://docs.starrybot.xyz">📖</a>
+            <a className="top-bar-discord-link" href="https://discord.gg/BqjEhWzJKU">
+              <img src="/art/Discord-Logo-Color.svg" alt="Discord Logo" />
+            </a>
+          </div>
         </div>
 
         <div className="body-wrap">
