@@ -60,8 +60,13 @@ function Home() {
         <i className="fas fa-meteor">☄️</i>
         <h2 className="starry-welcome"> starrybot welcomes you! </h2>
         <p>Click on the link below to add starrybot to your Discord server.</p>
-        <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
-          className="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img></a>
+        <div className={"add-bot-button large button round-button disabled"}>
+          <a href="#"
+            > Add Bot
+            <img src="/art/star.png"/>
+          </a>
+        </div>
+        <div>⚠: <em>️We're working with Discord to allow more than 100 servers to join.</em><br/><em>Thank you for your patience.</em></div>
       </div>
 
       <div className="starry-deets row medium-10 small-12 large-10 column text-center">
@@ -79,8 +84,10 @@ function Home() {
       <div className="starry-bonus row medium-10 small-12 large-10 column text-center">
         <h3>starrybot authenticates with Keplr wallet</h3>
         <p>Promote membership for your Discord Community</p>
-        <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
-          className="add-bot-button large button round-button"> Add Bot <img src="/art/star.png"></img></a>
+        <div className="add-bot-button large button round-button disabled">
+          <a href="#"> Add Bot <img src="/art/star.png"></img></a>
+
+        </div>
       </div>
       <nav>
         <Link to="/terms">Terms of Service</Link><br/>
