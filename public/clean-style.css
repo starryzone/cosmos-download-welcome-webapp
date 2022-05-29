@@ -23,17 +23,45 @@ body, html {
   transition: all .2s ease-in-out;  
 }
 
-
-
-
-
 .top-bar {
-  background-color: #7585FF;
+  background-color: #4B56AC;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0px;
 }
 
-.top-bar-left {
-  font-size: 4em;
+.top-bar-icon-links {
+  display: flex;
+}
+
+@media screen and (min-width:600px) {  
+  .top-bar-icons {
+    font-size: 4em;
+  }
+
+  .top-bar-docs-link {
+    padding-right: 25px;
+  }
+
+  .top-bar-discord-link img {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-bar-icons {
+    align-self: center;
+    font-size: 2em;
+  }
+  
+  .top-bar-docs-link {
+    padding-right: 10px;
+  }
+
+  .top-bar-discord-link img {
+    height: 1em;
+    padding-bottom: 5px;
+  }
 }
 
 .side-logos {
@@ -54,17 +82,15 @@ body, html {
   transform: scale(1.1);
 }
 
-
-
-
 .add-bot-button {
   border-radius: 50px;
   background-color: white;
   border: 2px solid #FC8AD0;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0;
+  padding: 5px 20px 5px 30px;
   color: black;
-  font-weight: 777;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .add-bot-button img {
@@ -82,13 +108,16 @@ body, html {
   margin-bottom: 10px;
 }
 
-.starry-intro {
-  padding: 50px;
+.starry-container {
   border-radius: 15px;
+  color: white;
+  padding: 50px;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.starry-intro {
   background: linear-gradient(#5f6dc7, #8697f6);
-  color: white;
 }
 
 .fa-meteor {
@@ -101,20 +130,31 @@ body, html {
 }
 
 .starry-deets {
-  padding: 50px;
-  border-radius: 15px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  background: linear-gradient(#be75a4, #fa9fdb);
-  color: white;
+  align-items: center;
+  background: linear-gradient(#CA70a9, #EB87CC);
+  display: flex;
+  justify-content: space-between;
+}
+
+.starry-deets img {
+  max-height: 200px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .starry-deets {
+    flex-direction: column;
+  }
+
+  .starry-deets img {
+    padding-left: 0;
+  }
 }
 
 .starry-bonus {
-  padding: 50px;
-  border-radius: 15px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  background: linear-gradient(#dD9280, #FDC2A0);
-  color: white;
+  background: #8A9CFC;
 }
 
+.starry-communities {
+  background: linear-gradient(#5f6dc7, #8697f6);
+}

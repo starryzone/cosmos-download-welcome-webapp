@@ -26,8 +26,14 @@ class App extends Component {
         <audio id="clamber" src="/art/starry.mp4" preload="auto"></audio>
 
         <div className="top-bar">
-          <div className="top-bar-left" style={{position: "absolute", top: 8, left: 20}}>🌟🤖</div>
-          <div className="top-bar-name text-center">starrybot</div>
+          <div className="top-bar-icons">🌟 🤖</div>
+          <div className="top-bar-name text-center">Starrybot</div>
+          <div className="top-bar-icons top-bar-icon-links">
+            <a className='top-bar-docs-link' href="https://docs.starrybot.xyz" target="_blank">📖</a>
+            <a className="top-bar-discord-link" href="https://discord.gg/BqjEhWzJKU">
+              <img src="/art/Discord-Logo-Color.svg" alt="Discord Logo" />
+            </a>
+          </div>
         </div>
 
         <div className="body-wrap">
@@ -56,38 +62,41 @@ class App extends Component {
 function Home() {
   return (
     <>
-      <div className="starry-intro row medium-10 small-12 large-10 column text-center">
+      <div className="starry-intro starry-container row medium-10 small-12 large-10 column text-center">
         <i className="fas fa-meteor">☄️</i>
         <h2 className="starry-welcome"> starrybot welcomes you! </h2>
         <p>Click on the link below to add starrybot to your Discord server.</p>
         <div className={"add-bot-button large button round-button disabled"}>
           <a href="#"
-            > Add Bot
+          > Add Bot
             <img src="/art/star.png"/>
           </a>
         </div>
-        <div>⚠: <em>️We're working with Discord to allow more than 100 servers to join.</em><br/><em>Thank you for your patience.</em></div>
+        <div style={{paddingTop: 19}}>⚠: <em>️We're working with Discord to allow more than 100 servers to join.</em><br/><em>Thank you for your patience.</em></div>
       </div>
 
-      <div className="starry-deets row medium-10 small-12 large-10 column text-center">
-        <div className="row">
-          <div className="large-7 medium-12 small-12 columns text-left">
-            <h3>Create token-gated roles and channels.</h3>
-            <p>Add rules checking if the user has certain tokens in the Cosmos ecosystem.</p>
+      <div className="starry-deets starry-container row medium-10 small-12 large-10 column text-left">
+        <p>Create token-gated roles and channels with CW721 and CW20 Tokens</p>
+        <img className="starry-deets-img" src="/art/discord.png" alt="discord window screenshot"></img>
+      </div>
+
+      <div className="starry-bonus starry-container row medium-10 small-12 large-10 column text-center">
+        <p style={{ maxWidth: 400, margin: "0 auto"}}>Starrybot authenticates with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
+        <br />
+        <div>
+          <div className={"add-bot-button large button round-button disabled"}>
+            <a style={{ marginRight: 20 }} href="#"> Add Bot <img alt="star-emoji" src="/art/star.png" /></a>
           </div>
-          <div className="large-5 medium-12 small-12 columns">
-            <img src="/art/discord.png" alt="discord window screenshot"></img>
+          <div className={"add-bot-button large button round-button"}>
+            <a href="https://docs.starrybot.xyz" target="_blank">
+              Docs <img alt="open-book-emoji" src="/art/open-book.png" />
+            </a>
           </div>
         </div>
       </div>
 
-      <div className="starry-bonus row medium-10 small-12 large-10 column text-center">
-        <h3>starrybot authenticates with Keplr wallet</h3>
-        <p>Promote membership for your Discord Community</p>
-        <div className="add-bot-button large button round-button disabled">
-          <a href="#"> Add Bot <img src="/art/star.png"></img></a>
-
-        </div>
+      <div className="starry-communities starry-container row medium-10 small-12 large-10 column text-center">
+        <h3>Communities using Starrybot:</h3>
       </div>
       <nav>
         <Link to="/terms">Terms of Service</Link><br/>

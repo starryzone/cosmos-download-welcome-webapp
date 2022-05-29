@@ -100,3 +100,7 @@ div.starry-toc ul {
   pointer-events: auto;
 }
 
+.add-bot-button {
+  margin: 0 6px;
+}
+
