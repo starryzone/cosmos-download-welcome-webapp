@@ -94,3 +94,9 @@ div.starry-toc h3 {
 div.starry-toc ul {
   padding-left: 19px;
 }
+
+.button.disabled:hover, .button.disabled > a {
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
