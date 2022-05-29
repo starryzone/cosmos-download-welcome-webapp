@@ -29,7 +29,7 @@ class App extends Component {
           <div className="top-bar-icons">🌟 🤖</div>
           <div className="top-bar-name text-center">Starrybot</div>
           <div className="top-bar-icons top-bar-icon-links">
-            <a className='top-bar-docs-link' href="https://docs.starrybot.xyz">📖</a>
+            <a className='top-bar-docs-link' href="https://docs.starrybot.xyz" target="_blank">📖</a>
             <a className="top-bar-discord-link" href="https://discord.gg/BqjEhWzJKU">
               <img src="/art/Discord-Logo-Color.svg" alt="Discord Logo" />
             </a>
@@ -88,7 +88,7 @@ function Home() {
             <a style={{ marginRight: 20 }} href="#"> Add Bot <img alt="star-emoji" src="/art/star.png" /></a>
           </div>
           <div className={"add-bot-button large button round-button"}>
-            <a href="https://docs.starrybot.xyz">
+            <a href="https://docs.starrybot.xyz" target="_blank">
               Docs <img alt="open-book-emoji" src="/art/open-book.png" />
             </a>
           </div>
