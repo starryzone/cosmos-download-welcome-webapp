@@ -104,3 +104,15 @@ div.starry-toc ul {
   margin: 0 6px;
 }
 
+#github-buttons {
+  padding-top: 19px;
+}
+
+#github-buttons > div > div {
+  display: inline;
+  padding: 6px;
+}
+
+#github-buttons a {
+  color: #ffec5f;
+}

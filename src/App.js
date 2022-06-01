@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import preval from 'preval.macro'
+import GitHubButton from 'react-github-btn'
 
 class App extends Component {
   componentDidMount() {
@@ -73,6 +74,25 @@ function Home() {
           </a>
         </div>
         <div style={{paddingTop: 19}}>⚠: <em>️We're working with Discord to allow more than 100 servers to join.</em><br/><em>Thank you for your patience.</em></div>
+        <div id="github-buttons">
+          <div>
+            <p>
+              starrybot is now open source!<br/>
+              devs: please feel free to contribute<br/>
+              discord admins: you may now run your own bot!
+            </p>
+            <h5>(Learn more about starrybot at the <a href="https://docs.starrybot.xyz" target="_blank">docs site</a>)</h5>
+            <h5>If you're a Discord admin interested in a hosted option, hit us up on <a href="https://discord.gg/BqjEhWzJKU" target="_blank">Discord</a></h5>
+          </div>
+          <div>
+            <div>
+              <GitHubButton href="https://github.com/starryzone/starrybot-discord/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork starryzone/starrybot-discord on GitHub">Fork</GitHubButton>
+            </div>
+            <div>
+              <GitHubButton href="https://github.com/starryzone/starrybot-discord" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star starryzone/starrybot-discord on GitHub">Star</GitHubButton>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="starry-deets starry-container row medium-10 small-12 large-10 column text-left">
