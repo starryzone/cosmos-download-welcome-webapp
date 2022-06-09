@@ -67,13 +67,12 @@ function Home() {
         <i className="fas fa-meteor">☄️</i>
         <h2 className="starry-welcome"> starrybot welcomes you! </h2>
         <p>Click on the link below to add starrybot to your Discord server.</p>
-        <div className={"add-bot-button large button round-button disabled"}>
-          <a href="#"
+        <div className={"add-bot-button large button round-button"}>
+          <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
           > Add Bot
             <img src="/art/star.png"/>
           </a>
         </div>
-        <div style={{paddingTop: 19}}>⚠: <em>️We're working with Discord to allow more than 100 servers to join.</em><br/><em>Thank you for your patience.</em></div>
         <div id="github-buttons">
           <div>
             <p>
@@ -104,8 +103,8 @@ function Home() {
         <p style={{ maxWidth: 400, margin: "0 auto"}}>Starrybot authenticates with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
         <br />
         <div>
-          <div className={"add-bot-button large button round-button disabled"}>
-            <a style={{ marginRight: 20 }} href="#"> Add Bot <img alt="star-emoji" src="/art/star.png" /></a>
+          <div className={"add-bot-button large button round-button"}>
+            <a style={{ marginRight: 20 }} href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"> Add Bot <img alt="star-emoji" src="/art/star.png" /></a>
           </div>
           <div className={"add-bot-button large button round-button"}>
             <a href="https://docs.starrybot.xyz" target="_blank">

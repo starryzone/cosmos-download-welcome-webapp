@@ -116,3 +116,7 @@ div.starry-toc ul {
 #github-buttons a {
   color: #ffec5f;
 }
+
+.button:focus, .button:hover a {
+  color: #ffffff;
+}
