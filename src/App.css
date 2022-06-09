@@ -120,3 +120,21 @@ div.starry-toc ul {
 .button:focus, .button:hover a {
   color: #ffffff;
 }
+
+.bottom-part {
+  background-color: #4B56AC;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  padding: 23px;
+}
+
+.bottom-part #tag {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#footer-links, #footer-discord {
+  text-align: left;
+  color: #ffffff;
+}

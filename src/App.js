@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
-import preval from 'preval.macro'
 import GitHubButton from 'react-github-btn'
 
 class App extends Component {
@@ -47,14 +46,20 @@ class App extends Component {
           </main>
         </div>
 
-        <p>A fusion of web2 and web3 for the cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
-        <p>Join us on <a href="https://discord.gg/BqjEhWzJKU">Discord</a></p>
-        <Link to="/terms">Terms and Conditions</Link>
-        <br/>
-        <br/>
-        <a href="https://www.youtube.com/watch?v=sJ_tZr0D2pk">🌟</a>
-        <br/>
-        <p style={{color: "white"}}>Build Date: {preval`module.exports = new Date().toLocaleString();`}</p>
+        <div className="bottom-part">
+          <div id="tag">
+            <p>A fusion of web2 and web3 for the cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
+          </div>
+          <div id="footer-links">
+            <nav>
+              <Link to="/terms">Terms of Service</Link><br/>
+              <Link to="/privacy">Privacy policy</Link>
+            </nav>
+          </div>
+          <div id="footer-discord">
+            <p>Join us on <a href="https://discord.gg/BqjEhWzJKU">Discord</a></p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -114,13 +119,9 @@ function Home() {
         </div>
       </div>
 
-      <div className="starry-communities starry-container row medium-10 small-12 large-10 column text-center">
-        <h3>Communities using Starrybot:</h3>
-      </div>
-      <nav>
-        <Link to="/terms">Terms of Service</Link><br/>
-        <Link to="/privacy">Privacy policy</Link>
-      </nav>
+      {/*<div className="starry-communities starry-container row medium-10 small-12 large-10 column text-center">*/}
+      {/*  <h3>Communities using Starrybot:</h3>*/}
+      {/*</div>*/}
     </>
   )
 }
