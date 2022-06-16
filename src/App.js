@@ -35,7 +35,7 @@ const App = ({}) => {
       <div className="bottom-part">
         <div id="tag" className="row  expanded">
           <div className="columns">
-            <p>A fusion of web2 and web3 for the cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
+            <p>a fusion of web2 and web3 for the Cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
           </div>
         </div>
         <div id="footer-container" className="row large-12">
@@ -54,28 +54,33 @@ const App = ({}) => {
 function Home() {
   return <>
     <div className="starry-intro starry-container row medium-10 small-12 large-10 column text-center">
-      <i className="fas fa-meteor">☄️</i>
-      <h2 className="starry-welcome"> starrybot welcomes you! </h2>
-      <p>Currently supporting Discord servers.</p>
-      <div className={"add-bot-button large button round-button"}>
-        <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
-        > Add Bot
-          <img src="/art/star.png"/>
-        </a>
+      <div id="cute-stars" className="column large-3">
+        <object type="image/svg+xml" data="/art/starrybot-top-fun.svg">
+          <img src="/art/starrybot-top-fun.svg" />
+        </object>
       </div>
-      <div id="github-buttons">
-        <div>
-          <p>
-            <span id="open-source">starrybot is now open source</span><br/>
-            discord admins: you may now run your own bot!
-          </p>
+      <div className="column large-7">
+        <i className="fas fa-meteor">☄️</i>
+        <h2 className="starry-welcome">starrybot welcomes you!</h2>
+        <p>Currently supporting Discord servers.</p>
+        <div className={"add-bot-button large button round-button"}>
+          <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8">Add Bot
+            <img src="/art/star.png"/>
+          </a>
         </div>
-        <div id="github-button-container">
+        <div id="github-buttons">
           <div>
-            <GitHubButton href="https://github.com/starryzone/starrybot-discord/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork starryzone/starrybot-discord on GitHub">Fork</GitHubButton>
+            <p>
+              <span id="open-source">starrybot is now open source</span>
+            </p>
           </div>
-          <div>
-            <GitHubButton href="https://github.com/starryzone/starrybot-discord" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star starryzone/starrybot-discord on GitHub">Star</GitHubButton>
+          <div id="github-button-container">
+            <div>
+              <GitHubButton href="https://github.com/starryzone/starrybot-discord/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork starryzone/starrybot-discord on GitHub">Fork</GitHubButton>
+            </div>
+            <div>
+              <GitHubButton href="https://github.com/starryzone/starrybot-discord" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star starryzone/starrybot-discord on GitHub">Star</GitHubButton>
+            </div>
           </div>
         </div>
       </div>
@@ -83,12 +88,13 @@ function Home() {
 
     <div id="twofer" className="row starry-container small-12 medium-10 large-10">
       <div className="starry-deets starry-container medium-12 large-6 column text-left">
-        <p>Create token-gated roles and channels with CW721 and CW20 tokens</p>
+        <p>Create token-gated roles and channels with <a href="https://docs.cosmwasm.com/cw-plus/0.9.0/cw721/spec" target="_blank">CW721</a> and <a href="https://docs.cosmwasm.com/cw-plus/0.9.0/cw20/spec" target="_blank">CW20</a> tokens</p>
         <img className="starry-deets-img" src="/art/discord.png" alt="discord window screenshot"></img>
       </div>
 
       <div className="starry-bonus starry-container small-10 medium-10 large-5 column text-center">
-        <p style={{ maxWidth: 400, margin: "0 auto"}}>authenticate with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
+        <div id="docs-circle" />
+        <p style={{ maxWidth: 400, margin: "0 auto"}}>authenticate with <a id="keplr-link" href="https://keplr.app" target="_blank"><span className="keplr">Keplr wallet</span></a> and promotes membership for your <span className="bluey">Discord Community</span></p>
         <br />
         <div>
           <div className={"add-bot-button large button round-button"}>

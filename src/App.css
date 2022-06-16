@@ -134,7 +134,7 @@ a {
 }
 
 #footer-links {
-  text-align: left;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -161,6 +161,7 @@ a {
 .starry-communities a {
   color: #ffffff;
   text-decoration: underline;
+  text-decoration-thickness: 0.06rem;
 }
 
 .starry-communities a:hover {
@@ -209,7 +210,8 @@ a {
 span#open-source {
   color: #b2f7ff;
   font-size: 31px;
-
+  text-shadow: 1px 1px #0072f0;
+  display: block;
 }
 
 #github-button-container {
@@ -230,14 +232,102 @@ span#open-source {
 @media screen and (max-width: 63.9375em) {
   #twofer .starry-container.column {
     float: none;
-    /*margin-top: 6px;*/
     margin-bottom: 19px;
   }
   h3 {
     font-size: 1.9rem;
   }
+  .starry-intro #cute-stars {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .starry-bonus #docs-circle {
+    background: linear-gradient(to bottom, #a87000, #f7b636);
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: -66%;
+    left: -3%;
+    z-index: -1;
+  }
+  .starry-bonus {
+    background: transparent;
+    position: relative;
+  }
+  .starry-communities h3 {
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
 }
 
 .footer-container {
   text-align: center;
+}
+
+.button a {
+  color: #0072f0;
+}
+
+.button img {
+  padding-left: 6px;
+}
+
+.starry-intro {
+  position: relative;
+}
+
+.starry-intro #cute-stars {
+  position: absolute;
+  bottom: 0;
+  left: 6%;
+  width: 35%;
+}
+
+.starry-deets-img {
+  border: 6px solid rgba(255,255,255,0.6);
+  border-radius: 6px;
+}
+
+.starry-deets > p {
+  padding-right: 6px;
+}
+
+.bluey {
+  font-weight: 666;
+  color: white;
+  text-shadow: 1px 1px #5865f2;
+}
+
+.bottom-part p {
+  font-size: 1.3rem;
+  font-weight: 333;
+}
+
+.bottom-part a:hover {
+  color: rgba(255,255,255,0.9);
+  animation: color .6s;
+}
+
+span.keplr {
+  background: linear-gradient(to right, rgba(85,187,242,0.6), rgba(126,99,245,0.6));
+  padding: 4px 6px;
+  color: white;
+  border-radius: 13px;
+  text-shadow: 1px 1px #7e63f5;
+}
+
+a#keplr-link:hover, .starry-deets a:hover {
+  letter-spacing: 1px;
+}
+
+.starry-deets a:hover {
+  color: whitesmoke;
+}
+
+.starry-deets a {
+  text-decoration: underline;
+  text-decoration-thickness: 0.06rem;
 }

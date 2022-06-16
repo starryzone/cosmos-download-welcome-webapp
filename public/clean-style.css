@@ -3,12 +3,11 @@
 
 .body-wrap {
   background: linear-gradient(420deg, rgba(26,171,13,0.3), rgba(253,194,160,0.6));
-  padding: 2%;
+  padding: 1% 2%;
 }
 
 .body-wrap p {
   font-size: 1.5em;
-  font-weight: 555;
   line-height: 1.2em;
   margin-bottom: 25px;
 }
@@ -111,7 +110,7 @@
 }
 
 .starry-intro {
-  background: linear-gradient(#5f6dc7, #8697f6);
+  background: linear-gradient(#5f6dc7, rgba(134,151,246,0.9));
 }
 
 .fa-meteor {
@@ -132,7 +131,6 @@
 
 .starry-deets img {
   max-height: 200px;
-  padding-left: 20px;
 }
 
 @media screen and (max-width: 700px) {
@@ -146,9 +144,9 @@
 }
 
 .starry-bonus {
-  background: #8A9CFC;
+  background: linear-gradient(#d08b00, #f7b636);
 }
 
 .starry-communities {
-  background: linear-gradient(#5f6dc7, #8697f6);
+  background: linear-gradient(rgba(95,109,199,0.9), #8697f6);
 }
