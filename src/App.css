@@ -91,6 +91,10 @@ div.starry-toc ul {
   padding-left: 19px;
 }
 
+a {
+  color: #a4cde8;
+}
+
 .button.disabled:hover, .button.disabled > a {
   cursor: not-allowed;
   pointer-events: auto;
@@ -120,8 +124,6 @@ div.starry-toc ul {
 
 .bottom-part {
   background-color: #4B56AC;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 0px;
   padding: 23px;
 }
@@ -131,7 +133,7 @@ div.starry-toc ul {
   font-size: 16px;
 }
 
-#footer-links, #footer-discord {
+#footer-links {
   text-align: left;
   color: #ffffff;
 }
@@ -236,4 +238,6 @@ span#open-source {
   }
 }
 
-
+.footer-container {
+  text-align: center;
+}

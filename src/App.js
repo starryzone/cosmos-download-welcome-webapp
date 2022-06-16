@@ -33,17 +33,18 @@ const App = ({}) => {
       </div>
 
       <div className="bottom-part">
-        <div id="tag">
-          <p>A fusion of web2 and web3 for the cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
+        <div id="tag" className="row  expanded">
+          <div className="columns">
+            <p>A fusion of web2 and web3 for the cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
+          </div>
         </div>
-        <div id="footer-links">
-          <nav>
-            <Link to="/terms">Terms of Service</Link><br/>
-            <Link to="/privacy">Privacy policy</Link>
-          </nav>
-        </div>
-        <div id="footer-discord">
-          <p>Join us on <a href="https://discord.gg/BqjEhWzJKU">Discord</a></p>
+        <div id="footer-container" className="row large-12">
+          <div id="footer-links">
+            <nav>
+              <Link to="/terms">Terms of Service</Link><br/>
+              <Link to="/privacy">Privacy policy</Link>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
