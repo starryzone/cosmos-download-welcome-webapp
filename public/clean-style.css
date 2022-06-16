@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Questrial&display=swap');
 
 .body-wrap {
-  background: linear-gradient(420deg, rgba(26,171,13,0.3), rgba(253,194,160,0.6));
+  background: linear-gradient(420deg, rgba(26,171,13,0.3), rgba(253,194,160,0.2));
   padding: 1% 2%;
 }
 
@@ -44,7 +44,10 @@
 @media screen and (max-width: 600px) {
   .top-bar-icons {
     align-self: center;
-    font-size: 2em;
+    font-size: 3.6em;
+  }
+  .top-bar-icons.fun {
+    display: none;
   }
 
   .top-bar-docs-link {
@@ -54,6 +57,9 @@
   .top-bar-discord-link img {
     height: 1em;
     padding-bottom: 5px;
+  }
+  .starry-welcome {
+    font-size: 2.3rem;
   }
 }
 

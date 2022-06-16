@@ -234,17 +234,28 @@ span#open-source {
     float: none;
     margin-bottom: 19px;
   }
+  #twofer .starry-container.starry-bonus {
+    margin-bottom: 6px;
+  }
   h3 {
     font-size: 1.9rem;
   }
   .starry-intro #cute-stars {
     visibility: hidden;
   }
+  .bottom-part #tag p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 1300px) {
+  .starry-bonus {
+    background: transparent;
+    position: relative;
+  }
   .starry-bonus #docs-circle {
-    background: linear-gradient(to bottom, #a87000, #f7b636);
+    background: radial-gradient(circle at 300px 600px, #F7DD09, #f7b636);
+
     border-radius: 50%;
     height: 500px;
     width: 500px;
@@ -252,10 +263,6 @@ span#open-source {
     top: -66%;
     left: -3%;
     z-index: -1;
-  }
-  .starry-bonus {
-    background: transparent;
-    position: relative;
   }
   .starry-communities h3 {
     letter-spacing: 3px;

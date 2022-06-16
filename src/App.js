@@ -12,7 +12,7 @@ const App = ({}) => {
       <audio id="clamber" src="/art/starry.mp4" preload="auto"></audio>
 
       <div className="top-bar">
-        <div className="top-bar-icons">🌟 🤖</div>
+        <div className="top-bar-icons fun">🌟 🤖</div>
         <div className="top-bar-name text-center">starrybot</div>
         <div className="top-bar-icons top-bar-icon-links">
           <a className='top-bar-docs-link' href="https://docs.starrybot.xyz" target="_blank">📖</a>
@@ -108,7 +108,7 @@ function Home() {
     </div>
     <div className="starry-communities starry-container row medium-10 small-12 large-10 column text-center">
       <h3>Communities using starrybot:</h3>
-      <div id="featured-grid" className="row small-up-1 medium-up-2 large-up-3">
+      <div id="featured-grid" className="row small-up-2 large-up-3">
         {
           featuredDefaults.map((guild) => (
             <div className="column column-block">
