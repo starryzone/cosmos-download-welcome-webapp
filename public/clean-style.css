@@ -55,8 +55,7 @@
   }
 
   .top-bar-discord-link img {
-    height: 1em;
-    padding-bottom: 5px;
+    display: none;
   }
   .starry-welcome {
     font-size: 2.3rem;
