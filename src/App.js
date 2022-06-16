@@ -94,7 +94,7 @@ function Home() {
 
       <div className="starry-bonus starry-container small-10 medium-10 large-5 column text-center">
         <div id="docs-circle" />
-        <p style={{ maxWidth: 400, margin: "0 auto"}}>authenticate with <a id="keplr-link" href="https://keplr.app" target="_blank"><span className="keplr">Keplr wallet</span></a> and promotes membership for your <span className="bluey">Discord Community</span></p>
+        <p style={{ maxWidth: 400, margin: "0 auto"}}>authenticate with <a id="keplr-link" href="https://keplr.app" target="_blank"><span className="keplr">Keplr wallet</span></a> and strengthen membership for your <span className="bluey">Discord Community</span></p>
         <br />
         <div>
           <div className={"add-bot-button large button round-button"}>
