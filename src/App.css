@@ -138,3 +138,72 @@ div.starry-toc ul {
   text-align: left;
   color: #ffffff;
 }
+
+.starry-communities .featured-title {
+  font-size: 23px;
+  padding: 0 6px 6px 6px;
+  border-radius: 19px;
+}
+
+.starry-communities .guild-container > img {
+  border-radius: 19px;
+}
+
+.starry-communities .cute-container {
+  width: 80%;
+  background-color: rgba(245,136,204,0.9);
+  border-radius: 19px;
+}
+.starry-communities .guild-container {
+  width: 80%;
+  margin: 10px auto;
+  padding-top: 19px;
+}
+
+.starry-communities a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.starry-communities a:hover {
+  color: #f7dd36;
+}
+
+.starry-communities .column > img {
+  width: 300px;
+}
+
+.starry-communities .column {
+  padding-bottom: 19px;
+}
+
+.starry-communities .cute-container:hover > div img {
+  border-radius: 19px;
+  border: 3px solid rgba(247,221,54,0.9);
+  animation: border-radius .6s ease-in;
+}
+
+.starry-communities .cute-container:hover a {
+  letter-spacing: 1px;
+  animation: letter-spacing .6s ease-in;
+}
+
+.guild-container {
+  position: relative;
+}
+
+.radial-halo {
+  background: radial-gradient(whitesmoke, transparent);
+  width: 100%;
+  height: 90%;
+  top: 19px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.starry-communities .cute-container:hover .radial-halo {
+  opacity: 0.3;
+  animation: opacity .6s;
+}

@@ -1,129 +1,131 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
+import featuredDefaults from './featured'
 import GitHubButton from 'react-github-btn'
 
-class App extends Component {
-  componentDidMount() {
-    window.addEventListener('load', this.handleLoad);
-  }
+const App = ({}) => {
+  const [featured, setFeatured] = useState(featuredDefaults);
 
-  discordRedirect() {
-    console.log('hi')
-  }
+  return (
+    <div className="App" >
+      <audio id="clamber" src="/art/starry.mp4" preload="auto"></audio>
 
-  componentWillUnmount() {
-    window.removeEventListener('load', this.handleLoad)
-  }
-
-  handleLoad = async () => {
-    console.log('loaded')
-  }
-
-  render() {
-    return (
-      <div className="App" >
-        <audio id="clamber" src="/art/starry.mp4" preload="auto"></audio>
-
-        <div className="top-bar">
-          <div className="top-bar-icons">🌟 🤖</div>
-          <div className="top-bar-name text-center">Starrybot</div>
-          <div className="top-bar-icons top-bar-icon-links">
-            <a className='top-bar-docs-link' href="https://docs.starrybot.xyz" target="_blank">📖</a>
-            <a className="top-bar-discord-link" href="https://discord.gg/BqjEhWzJKU">
-              <img src="/art/Discord-Logo-Color.svg" alt="Discord Logo" />
-            </a>
-          </div>
-        </div>
-
-        <div className="body-wrap">
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="terms" element={<Terms />} />
-              <Route path="privacy" element={<Privacy />} />
-            </Routes>
-          </main>
-        </div>
-
-        <div className="bottom-part">
-          <div id="tag">
-            <p>A fusion of web2 and web3 for the cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
-          </div>
-          <div id="footer-links">
-            <nav>
-              <Link to="/terms">Terms of Service</Link><br/>
-              <Link to="/privacy">Privacy policy</Link>
-            </nav>
-          </div>
-          <div id="footer-discord">
-            <p>Join us on <a href="https://discord.gg/BqjEhWzJKU">Discord</a></p>
-          </div>
+      <div className="top-bar">
+        <div className="top-bar-icons">🌟 🤖</div>
+        <div className="top-bar-name text-center">starrybot</div>
+        <div className="top-bar-icons top-bar-icon-links">
+          <a className='top-bar-docs-link' href="https://docs.starrybot.xyz" target="_blank">📖</a>
+          <a className="top-bar-discord-link" href="https://discord.gg/BqjEhWzJKU">
+            <img src="/art/Discord-Logo-Color.svg" alt="Discord Logo" />
+          </a>
         </div>
       </div>
-    );
-  }
+
+      <div className="body-wrap">
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="terms" element={<Terms />} />
+            <Route path="privacy" element={<Privacy />} />
+          </Routes>
+        </main>
+      </div>
+
+      <div className="bottom-part">
+        <div id="tag">
+          <p>A fusion of web2 and web3 for the cosmos ecosystem by your team at <a href="https://github.com/starryzone">github.com/starryzone</a></p>
+        </div>
+        <div id="footer-links">
+          <nav>
+            <Link to="/terms">Terms of Service</Link><br/>
+            <Link to="/privacy">Privacy policy</Link>
+          </nav>
+        </div>
+        <div id="footer-discord">
+          <p>Join us on <a href="https://discord.gg/BqjEhWzJKU">Discord</a></p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function Home() {
-  return (
-    <>
-      <div className="starry-intro starry-container row medium-10 small-12 large-10 column text-center">
-        <i className="fas fa-meteor">☄️</i>
-        <h2 className="starry-welcome"> starrybot welcomes you! </h2>
-        <p>Click on the link below to add starrybot to your Discord server.</p>
+  return <>
+    <div className="starry-intro starry-container row medium-10 small-12 large-10 column text-center">
+      <i className="fas fa-meteor">☄️</i>
+      <h2 className="starry-welcome"> starrybot welcomes you! </h2>
+      <p>Click on the link below to add starrybot to your Discord server.</p>
+      <div className={"add-bot-button large button round-button"}>
+        <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
+        > Add Bot
+          <img src="/art/star.png"/>
+        </a>
+      </div>
+      <div id="github-buttons">
+        <div>
+          <p>
+            starrybot is now open source!<br/>
+            devs: please feel free to contribute<br/>
+            discord admins: you may now run your own bot!
+          </p>
+          <h5>(Learn more about starrybot at the <a href="https://docs.starrybot.xyz" target="_blank">docs site</a>)</h5>
+          <h5>If you're a Discord admin interested in a hosted option, hit us up on <a href="https://discord.gg/BqjEhWzJKU" target="_blank">Discord</a></h5>
+        </div>
+        <div>
+          <div>
+            <GitHubButton href="https://github.com/starryzone/starrybot-discord/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork starryzone/starrybot-discord on GitHub">Fork</GitHubButton>
+          </div>
+          <div>
+            <GitHubButton href="https://github.com/starryzone/starrybot-discord" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star starryzone/starrybot-discord on GitHub">Star</GitHubButton>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="starry-deets starry-container row medium-10 small-12 large-10 column text-left">
+      <p>Create token-gated roles and channels with CW721 and CW20 Tokens</p>
+      <img className="starry-deets-img" src="/art/discord.png" alt="discord window screenshot"></img>
+    </div>
+
+    <div className="starry-bonus starry-container row medium-10 small-12 large-10 column text-center">
+      <p style={{ maxWidth: 400, margin: "0 auto"}}>starrybot authenticates with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
+      <br />
+      <div>
         <div className={"add-bot-button large button round-button"}>
-          <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
-          > Add Bot
-            <img src="/art/star.png"/>
+          <a style={{ marginRight: 20 }} href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"> Add Bot <img alt="star-emoji" src="/art/star.png" /></a>
+        </div>
+        <div className={"add-bot-button large button round-button"}>
+          <a href="https://docs.starrybot.xyz" target="_blank">
+            Docs <img alt="open-book-emoji" src="/art/open-book.png" />
           </a>
         </div>
-        <div id="github-buttons">
-          <div>
-            <p>
-              starrybot is now open source!<br/>
-              devs: please feel free to contribute<br/>
-              discord admins: you may now run your own bot!
-            </p>
-            <h5>(Learn more about starrybot at the <a href="https://docs.starrybot.xyz" target="_blank">docs site</a>)</h5>
-            <h5>If you're a Discord admin interested in a hosted option, hit us up on <a href="https://discord.gg/BqjEhWzJKU" target="_blank">Discord</a></h5>
-          </div>
-          <div>
-            <div>
-              <GitHubButton href="https://github.com/starryzone/starrybot-discord/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork starryzone/starrybot-discord on GitHub">Fork</GitHubButton>
+      </div>
+    </div>
+
+    <div className="starry-communities starry-container row medium-10 small-12 large-10 column text-center">
+      <h3>Communities using starrybot:</h3>
+      <div className="row small-up-1 medium-up-2 large-up-3">
+        {
+          featuredDefaults.map((guild) => (
+            <div className="column column-block">
+              <div className="cute-container">
+                <div className="guild-container">
+                  <a href={guild.link} target={"_blank"}>
+                    <img src={guild.discordImg} alt={guild.discordName} />
+                  </a>
+                  <div className="radial-halo" />
+                </div>
+                <a href={guild.link} target={"_blank"}>
+                  <div className="featured-title">{guild.discordName}</div>
+                </a>
+              </div>
             </div>
-            <div>
-              <GitHubButton href="https://github.com/starryzone/starrybot-discord" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star starryzone/starrybot-discord on GitHub">Star</GitHubButton>
-            </div>
-          </div>
-        </div>
+          ))
+        }
       </div>
-
-      <div className="starry-deets starry-container row medium-10 small-12 large-10 column text-left">
-        <p>Create token-gated roles and channels with CW721 and CW20 Tokens</p>
-        <img className="starry-deets-img" src="/art/discord.png" alt="discord window screenshot"></img>
-      </div>
-
-      <div className="starry-bonus starry-container row medium-10 small-12 large-10 column text-center">
-        <p style={{ maxWidth: 400, margin: "0 auto"}}>Starrybot authenticates with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
-        <br />
-        <div>
-          <div className={"add-bot-button large button round-button"}>
-            <a style={{ marginRight: 20 }} href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"> Add Bot <img alt="star-emoji" src="/art/star.png" /></a>
-          </div>
-          <div className={"add-bot-button large button round-button"}>
-            <a href="https://docs.starrybot.xyz" target="_blank">
-              Docs <img alt="open-book-emoji" src="/art/open-book.png" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/*<div className="starry-communities starry-container row medium-10 small-12 large-10 column text-center">*/}
-      {/*  <h3>Communities using Starrybot:</h3>*/}
-      {/*</div>*/}
-    </>
-  )
+    </div>
+  </>
 }
 
 function Privacy() {
