@@ -55,7 +55,7 @@ function Home() {
     <div className="starry-intro starry-container row medium-10 small-12 large-10 column text-center">
       <i className="fas fa-meteor">☄️</i>
       <h2 className="starry-welcome"> starrybot welcomes you! </h2>
-      <p>Click on the link below to add starrybot to your Discord server.</p>
+      <p>Currently supporting Discord servers.</p>
       <div className={"add-bot-button large button round-button"}>
         <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"
         > Add Bot
@@ -65,14 +65,11 @@ function Home() {
       <div id="github-buttons">
         <div>
           <p>
-            starrybot is now open source!<br/>
-            devs: please feel free to contribute<br/>
+            <span id="open-source">starrybot is now open source</span><br/>
             discord admins: you may now run your own bot!
           </p>
-          <h5>(Learn more about starrybot at the <a href="https://docs.starrybot.xyz" target="_blank">docs site</a>)</h5>
-          <h5>If you're a Discord admin interested in a hosted option, hit us up on <a href="https://discord.gg/BqjEhWzJKU" target="_blank">Discord</a></h5>
         </div>
-        <div>
+        <div id="github-button-container">
           <div>
             <GitHubButton href="https://github.com/starryzone/starrybot-discord/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork starryzone/starrybot-discord on GitHub">Fork</GitHubButton>
           </div>
@@ -83,29 +80,28 @@ function Home() {
       </div>
     </div>
 
-    <div className="starry-deets starry-container row medium-10 small-12 large-10 column text-left">
-      <p>Create token-gated roles and channels with CW721 and CW20 Tokens</p>
-      <img className="starry-deets-img" src="/art/discord.png" alt="discord window screenshot"></img>
-    </div>
+    <div id="twofer" className="row starry-container small-12 medium-10 large-10">
+      <div className="starry-deets starry-container medium-12 large-6 column text-left">
+        <p>Create token-gated roles and channels with CW721 and CW20 tokens</p>
+        <img className="starry-deets-img" src="/art/discord.png" alt="discord window screenshot"></img>
+      </div>
 
-    <div className="starry-bonus starry-container row medium-10 small-12 large-10 column text-center">
-      <p style={{ maxWidth: 400, margin: "0 auto"}}>starrybot authenticates with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
-      <br />
-      <div>
-        <div className={"add-bot-button large button round-button"}>
-          <a style={{ marginRight: 20 }} href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8"> Add Bot <img alt="star-emoji" src="/art/star.png" /></a>
-        </div>
-        <div className={"add-bot-button large button round-button"}>
-          <a href="https://docs.starrybot.xyz" target="_blank">
-            Docs <img alt="open-book-emoji" src="/art/open-book.png" />
-          </a>
+      <div className="starry-bonus starry-container small-10 medium-10 large-5 column text-center">
+        <p style={{ maxWidth: 400, margin: "0 auto"}}>authenticate with <b>Keplr wallet</b> and promotes membership for your <b>Discord Community</b></p>
+        <br />
+        <div>
+          <div className={"add-bot-button large button round-button"}>
+            <a href="https://docs.starrybot.xyz" target="_blank">
+              Docs <img alt="open-book-emoji" src="/art/open-book.png" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
+    </div>
     <div className="starry-communities starry-container row medium-10 small-12 large-10 column text-center">
       <h3>Communities using starrybot:</h3>
-      <div className="row small-up-1 medium-up-2 large-up-3">
+      <div id="featured-grid" className="row small-up-1 medium-up-2 large-up-3">
         {
           featuredDefaults.map((guild) => (
             <div className="column column-block">

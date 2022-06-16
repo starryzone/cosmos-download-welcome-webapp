@@ -37,10 +37,6 @@
   }
 }
 
-body {
-  background-color: #FDC2A0;
-}
-
 .below-the-fold {
   padding: 31px;
 }
@@ -106,6 +102,7 @@ div.starry-toc ul {
 
 #github-buttons {
   padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 #github-buttons > div > div {
@@ -150,7 +147,6 @@ div.starry-toc ul {
 }
 
 .starry-communities .cute-container {
-  width: 80%;
   background-color: rgba(245,136,204,0.9);
   border-radius: 19px;
 }
@@ -207,3 +203,37 @@ div.starry-toc ul {
   opacity: 0.3;
   animation: opacity .6s;
 }
+
+span#open-source {
+  color: #b2f7ff;
+  font-size: 31px;
+
+}
+
+#github-button-container {
+  transform: scale(1.3);
+}
+
+#twofer .starry-container {
+  margin: 0 auto;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  padding: 19px;
+}
+
+#featured-grid {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 63.9375em) {
+  #twofer .starry-container.column {
+    float: none;
+    /*margin-top: 6px;*/
+    margin-bottom: 19px;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+}
+
+
