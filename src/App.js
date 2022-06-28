@@ -200,9 +200,18 @@ function Home() {
         <div className="row">
           <a>
             <span className="featured-title">
-              and {metrics.totalGuilds-featuredDefaults.length} more!
+              and {metrics.totalGuilds - featuredDefaults.length} more!
             </span>
           </a>
+        </div>
+      </div>
+      <div className="starry-deets starry-container medium-10 row small-12 large-10 column text-left">
+        <div className="small-6 large-6 medium-6 column">
+          <p>STATS! </p>
+          <p>How are communities using startbot?</p>
+        </div>
+        <div className="small-6 large-6 medium-6 column">
+          
         </div>
       </div>
     </>
