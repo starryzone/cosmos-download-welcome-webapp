@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -95,7 +96,8 @@ a {
   color: #a4cde8;
 }
 
-.button.disabled:hover, .button.disabled > a {
+.button.disabled:hover,
+.button.disabled>a {
   cursor: not-allowed;
   pointer-events: auto;
 }
@@ -109,7 +111,7 @@ a {
   padding-bottom: 19px;
 }
 
-#github-buttons > div > div {
+#github-buttons>div>div {
   display: inline;
   padding: 6px;
 }
@@ -118,7 +120,8 @@ a {
   color: #ffec5f;
 }
 
-.button:focus, .button:hover a {
+.button:focus,
+.button:hover a {
   color: #ffffff;
 }
 
@@ -144,14 +147,15 @@ a {
   border-radius: 19px;
 }
 
-.starry-communities .guild-container > img {
+.starry-communities .guild-container>img {
   border-radius: 19px;
 }
 
 .starry-communities .cute-container {
-  background-color: rgba(245,136,204,0.9);
+  background-color: rgba(245, 136, 204, 0.9);
   border-radius: 19px;
 }
+
 .starry-communities .guild-container {
   width: 90%;
   margin: 10px auto;
@@ -168,7 +172,7 @@ a {
   color: #f7dd36;
 }
 
-.starry-communities .column > img {
+.starry-communities .column>img {
   width: 300px;
 }
 
@@ -176,9 +180,9 @@ a {
   padding-bottom: 19px;
 }
 
-.starry-communities .cute-container:hover > div img {
+.starry-communities .cute-container:hover>div img {
   border-radius: 19px;
-  border: 3px solid rgba(247,221,54,0.9);
+  border: 3px solid rgba(247, 221, 54, 0.9);
   animation: border-radius .6s ease-in;
 }
 
@@ -234,18 +238,23 @@ span#open-source {
     float: none;
     margin-bottom: 19px;
   }
+
   #twofer .starry-container.starry-bonus {
     margin-bottom: 6px;
   }
+
   h3 {
     font-size: 1.6rem;
   }
+
   .starry-intro #cute-stars {
     visibility: hidden;
   }
+
   .bottom-part #tag p {
     font-size: 1rem;
   }
+
   span.keplr {
     display: block;
     width: 50%;
@@ -258,6 +267,7 @@ span#open-source {
     background: transparent;
     position: relative;
   }
+
   .starry-bonus #docs-circle {
     background: radial-gradient(circle at 300px 600px, #F7DD09, #f7b636);
 
@@ -269,6 +279,7 @@ span#open-source {
     left: -3%;
     z-index: -1;
   }
+
   .starry-communities h3 {
     letter-spacing: 3px;
     font-weight: 300;
@@ -299,11 +310,11 @@ span#open-source {
 }
 
 .starry-deets-img {
-  border: 6px solid rgba(255,255,255,0.6);
+  border: 6px solid rgba(255, 255, 255, 0.6);
   border-radius: 6px;
 }
 
-.starry-deets > p {
+.starry-deets>p {
   padding-right: 6px;
 }
 
@@ -319,19 +330,20 @@ span#open-source {
 }
 
 .bottom-part a:hover {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   animation: color .6s;
 }
 
 span.keplr {
-  background: linear-gradient(to right, rgba(85,187,242,0.6), rgba(126,99,245,0.6));
+  background: linear-gradient(to right, rgba(85, 187, 242, 0.6), rgba(126, 99, 245, 0.6));
   padding: 4px 6px;
   color: white;
   border-radius: 13px;
   text-shadow: 1px 1px #7e63f5;
 }
 
-a#keplr-link:hover, .starry-deets a:hover {
+a#keplr-link:hover,
+.starry-deets a:hover {
   letter-spacing: 1px;
 }
 
@@ -342,4 +354,45 @@ a#keplr-link:hover, .starry-deets a:hover {
 .starry-deets a {
   text-decoration: underline;
   text-decoration-thickness: 0.06rem;
+}
+
+
+ul.metrics {
+  list-style: none;
+  /* Remove default bullets */
+}
+
+ul.metrics li {
+  height: 30px;
+}
+
+ul.metrics li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #cb1c6e;
+  /* Change the color */
+  font-weight: bold;
+  font-size: 50px;
+  position: relative;
+  top: 0.2em;
+  left: -0.1em;
+}
+
+ul.metrics li.native::before {
+  color: #3e76ea;
+}
+
+ul.metrics li.cw20::before {
+  color: #5fc9bf;
+}
+
+ul.metrics li.cw721::before {
+  color: #cb1c6e;
+}
+
+.metrics-container {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  margin: 20px 20px 20px 20px !important;
 }

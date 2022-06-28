@@ -3,10 +3,11 @@ import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { featuredDefaults, getMetrics } from "./featured";
 import GitHubButton from "react-github-btn";
+import { PieChart } from "react-minimal-pie-chart";
 
 const App = ({}) => {
   const [featured, setFeatured] = useState(featuredDefaults);
-  
+
   return (
     <div className="App">
       <audio id="clamber" src="/art/starry.mp4" preload="auto"></audio>
@@ -65,8 +66,15 @@ const App = ({}) => {
 };
 
 function Home() {
-  const [metrics, setMetrics] = useState({});
+  const [metrics, setMetrics] = useState({
+    totalGuilds: 0,
+    totalRoles: { native: 0, cw20: 0, cw721: 0 },
+    totalMembers: 0,
+  });
   const [isloaded, setLoaded] = useState(false);
+  const [selected, setSelected] = useState(0);
+  const [hovered, setHovered] = useState(0);
+  const lineWidth = 60;
 
   useEffect(async () => {
     if (!isloaded) {
@@ -206,12 +214,72 @@ function Home() {
         </div>
       </div>
       <div className="starry-deets starry-container medium-10 row small-12 large-10 column text-left">
-        <div className="small-6 large-6 medium-6 column">
+        <div className="small-7 large-7 medium-7 column">
           <p>STATS! </p>
           <p>How are communities using startbot?</p>
         </div>
-        <div className="small-6 large-6 medium-6 column">
-          
+        <div className="small-5 large-5 medium-5 column row metrics-container">
+          <div className="small-7 large-7 medium-7 column">
+            <PieChart
+              data={[
+                {
+                  title: "One",
+                  value: metrics.totalRoles.native,
+                  color: "#3e76ea",
+                },
+                {
+                  title: "Two",
+                  value: metrics.totalRoles.cw20,
+                  color: "#5fc9bf",
+                },
+                {
+                  title: "Three",
+                  value: metrics.totalRoles.cw721,
+                  color: "#cb1c6e",
+                },
+              ]}
+              style={{
+                fontFamily:
+                  '"Nunito Sans", -apple-system, Helvetica, Arial, sans-serif',
+                fontSize: "8px",
+                height: "200px",
+              }}
+              radius={PieChart.defaultProps.radius - 6}
+              lineWidth={60}
+              segmentsStyle={{ transition: "stroke .3s", cursor: "pointer" }}
+              segmentsShift={(index) => (index === selected ? 6 : 1)}
+              animate
+              label={({ dataEntry }) => Math.round(dataEntry.percentage) + "%"}
+              labelPosition={100 - lineWidth / 2}
+              labelStyle={{
+                fill: "#fff",
+                opacity: 0.75,
+                pointerEvents: "none",
+              }}
+              onClick={(_, index) => {
+                setSelected(index === selected ? undefined : index);
+              }}
+              onMouseOver={(_, index) => {
+                setHovered(index);
+              }}
+              onMouseOut={() => {
+                setHovered(undefined);
+              }}
+            />
+          </div>
+          <div className="small-5 large-5 medium-5 column">
+            <b>
+              {metrics.totalRoles.native +
+                metrics.totalRoles.cw721 +
+                metrics.totalRoles.cw20}{" "}
+              token rules
+            </b>
+            <ul className="metrics">
+              <li className="cw721">cw721</li>
+              <li className="cw20">cw20</li>
+              <li className="native">native</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
