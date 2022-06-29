@@ -206,17 +206,15 @@ function Home() {
           ))}
         </div>
         <div className="row">
-          <a>
-            <span className="featured-title">
-              and {metrics.totalGuilds - featuredDefaults.length} more!
-            </span>
-          </a>
+          <span className="featured-title">
+            and {metrics.totalGuilds - featuredDefaults.length} more!
+          </span>
         </div>
       </div>
       <div className="starry-deets starry-container medium-10 row small-12 large-10 column text-left">
         <div className="small-7 large-7 medium-7 column">
           <p>STATS! </p>
-          <p>How are communities using startbot?</p>
+          <p>How are communities using Starrybot?</p>
         </div>
         <div className="small-5 large-5 medium-5 column row metrics-container">
           <div className="small-7 large-7 medium-7 column">
