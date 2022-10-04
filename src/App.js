@@ -98,7 +98,7 @@ function Home() {
           <h2 className="starry-welcome">starrybot welcomes you!</h2>
           <p>Currently supporting Discord servers.</p>
           <div className={"add-bot-button large button round-button"}>
-            <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=8">
+            <a href="https://discord.com/oauth2/authorize?client_id=912554498050891796&scope=applications.commands%20bot&permissions=268486720">
               Add Bot
               <img src="/art/star.png" />
             </a>
